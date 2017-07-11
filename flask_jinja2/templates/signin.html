@@ -1,0 +1,14 @@
+<html>
+<body>
+<h1>please login first</h1>
+{% if message %}
+  <p style="color:red">{{ message }}</p>
+  {% endif %}
+<form action="/signin" method="post">
+    <input name="user"/><br>
+    <input name="psw" type="password"/><br>
+    <input type="submit"/>
+</form>
+</body>
+
+</html>
